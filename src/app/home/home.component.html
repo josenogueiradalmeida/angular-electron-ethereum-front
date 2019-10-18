@@ -1,35 +1,30 @@
-    <!-- Bootstrap core CSS -->
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<!-- Bootstrap core CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+  crossorigin="anonymous">
 
-<body class="bg-light">
-  <div class="container">
-    <div class="py-5 text-center">
-      <img class="d-block mx-auto mb-4" src="https://token.bndes.gov.br/assets/img/logo-bndescoin.png" alt="" width="72" height="72">
-      <h2>ID.GOV.BR</h2>
-      <p class="lead"></p>
-    </div>
-
-    <hr class="mb-4">
     <div class="row">
-      <div class="col-md-6">
-        <form action="http://localhost:9090/api/read">
-          <button type="submit" class="btn btn-primary btn-lg btn-block">
-              Read 
-            </button>
-        </form>
+      <div class="py-5 text-center col-md-12">
+        <img class="d-block mx-auto mb-4" src="https://token.bndes.gov.br/assets/img/logo-bndescoin.png" alt="" width="72" height="72">
+        <h2>BNDESToken Desktop App</h2>
       </div>
-      <div class="col-md-6">
-        <form action="http://localhost:9090/api/write">
-          <button type="submit" class="btn btn-success btn-lg btn-block">
-              Write
-            </button>
-        </form>
-      </div>
-      <div class="col-md-6">       
-        <button type="submit" class="btn btn-success btn-lg btn-block" (click)="lala()">
-            Lala
-        </button>
-      </div>      
     </div>
-  </div>
-</body>
+    <div class="row">
+      <div class="col-md-5"> </div>
+      <div class="col-md-2">
+        <button type="submit" class="btn btn-success btn-lg btn-block" (click)="getBlockchainAccounts()">
+            Contas Blockchain
+        </button>
+      </div>
+      <div class="col-md-5"> </div>
+    </div>  
+    <div class="row">
+      <div class="col-md-12">&nbsp;</div>
+    </div>
+    <div class="row">
+      <div class="col-md-4">&nbsp;</div>
+      <div class="col-md-4 form-group">
+        oi <input name="resultado" (ngModel)="resultado" value="veja o console" />
+             t+
+      </div>
+      <div class="col-md-4"> </div>
+    </div>      
